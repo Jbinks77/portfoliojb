@@ -1,8 +1,9 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { X } from "lucide-react";
 
-export function SimpleDialog({ open, onClose, title, description, children }: { open: boolean; onClose: () => void; title: string; description?: string; children: React.ReactNode; }) {
+export function SimpleDialog({ open, onClose, title, description, children }: { open: boolean; onClose: () => void; title: string; description?: string; children: ReactNode; }) {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm" role="dialog" aria-modal="true">

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export function SiteFooter() {
   return (
     <footer className="mt-20 border-t border-white/10 py-10">
@@ -11,9 +9,9 @@ export function SiteFooter() {
         <div>
           <p className="font-medium text-white">Liens</p>
           <div className="mt-2 flex flex-col gap-1">
-            <Link href="#">Instagram (placeholder)</Link>
-            <Link href="#">LinkedIn (placeholder)</Link>
-            <Link href="#">Mentions légales (placeholder)</Link>
+            <a href="#">Instagram (placeholder)</a>
+            <a href="#">LinkedIn (placeholder)</a>
+            <a href="#">Mentions légales (placeholder)</a>
           </div>
         </div>
         <div>
